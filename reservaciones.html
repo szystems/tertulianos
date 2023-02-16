@@ -99,7 +99,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="reservaciones.html" class="book-a-table-btn scrollto d-none d-lg-flex">Reservaciones</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Reservaciones</a>
 
     </div>
   </header><!-- End Header -->
@@ -109,145 +109,55 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Menu</h2>
+          <h2>Contacto</h2>
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li>Menu</li>
+            <li>Contacto</li>
           </ol>
         </div>
 
       </div>
     </section>
 
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2>Menu</h2>
-            <p>Museo Restaurante</p>
-          </div>
-
-          <div>
-            <a href="menu_bistro.html">Cambiar a Menu Bistro</a>
+            <h2>Reservaciones</h2>
+            <p>Reserve una mesa</p>
           </div>
   
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="menu-flters">
-                <li data-filter="*" class="filter-active">Todo</li>
-                <li data-filter=".filter-temporada">Temporada</li>
-                <li data-filter=".filter-desayunos">Desayunos</li>
-                <li data-filter=".filter-entradas">Entradas</li>
-                <li data-filter=".filter-ensaladas">Ensaladas</li>
-                <li data-filter=".filter-cremas">Cremas</li>
-                <li data-filter=".filter-fondue">Fondue</li>
-                <li data-filter=".filter-parrilladas">Parrilladas</li>
-                <li data-filter=".filter-steaks">Steaks</li>
-                <li data-filter=".filter-mariscos">Mariscos</li>
-                <li data-filter=".filter-pescados">Pescados</li>
-                <li data-filter=".filter-pollo">Pollo</li>
-                <li data-filter=".filter-pastas">Pastas</li>
-                <li data-filter=".filter-refacciones">Refacciones</li>
-                <li data-filter=".filter-infantil">Infantil</li>
-                <li data-filter=".filter-postres">Postres</li>
-                <li data-filter=".filter-bebidas_calientes">Bebidas Calientes</li>
-                <li data-filter=".filter-bebidas_frias">Bebidas Frias</li>
-                <li data-filter=".filter-cervezas_vinos">Cervezas y Vinos</li>
-              </ul>
+          <form action="reservacion.php" method="POST">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Please enter a valid email" required>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="date" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="time" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="number" class="form-control" name="people" id="people" placeholder="# de personas" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
+              </div>
             </div>
-          </div>
-  
-          <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-  
-            <div class="col-lg-12 menu-item filter-temporada">
-              <img src="assets/img/menu/menu_museo/mh1.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-temporada">
-              <img src="assets/img/menu/menu_museo/mh2.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-desayunos">
-              <img src="assets/img/menu/menu_museo/desayunos1.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-desayunos">
-              <img src="assets/img/menu/menu_museo/desayunos2.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-desayunos">
-              <img src="assets/img/menu/menu_museo/desayunos3.jpg" class="img-fluid" alt="responsive image">
-            </div>
-  
-            <div class="col-lg-12 menu-item filter-entradas">
-              <img src="assets/img/menu/menu_museo/entradas.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-ensaladas">
-              <img src="assets/img/menu/menu_museo/ensaladas.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-cremas">
-              <img src="assets/img/menu/menu_museo/cremas.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-fondue">
-              <img src="assets/img/menu/menu_museo/fondue.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-parrilladas">
-              <img src="assets/img/menu/menu_museo/parrilladas.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-steaks">
-              <img src="assets/img/menu/menu_museo/steaks.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-mariscos">
-              <img src="assets/img/menu/menu_museo/mariscos.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-pescados">
-              <img src="assets/img/menu/menu_museo/pescados.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-pollo">
-              <img src="assets/img/menu/menu_museo/pollo.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-pastas">
-              <img src="assets/img/menu/menu_museo/pastas.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-refacciones">
-              <img src="assets/img/menu/menu_museo/refacciones.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-infantil">
-              <img src="assets/img/menu/menu_museo/infantiles.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-postres">
-              <img src="assets/img/menu/menu_museo/postres.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-bebidas_calientes">
-              <img src="assets/img/menu/menu_museo/calientes.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-bebidas_frias">
-              <img src="assets/img/menu/menu_museo/frias.jpg" class="img-fluid" alt="responsive image">
-            </div>
-
-            <div class="col-lg-12 menu-item filter-cervezas_vinos">
-              <img src="assets/img/menu/menu_museo/cervezasyvinos.jpg" class="img-fluid" alt="responsive image">
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             </div>
             
-          </div>
+            <div class="text-center"><button type="submit">Enviar Reservación</button></div>
+          </form>
   
         </div>
-      </section><!-- End Menu Section -->
+      </section><!-- End Book A Table Section -->
 
   </main><!-- End #main -->
 
@@ -278,6 +188,7 @@
             <h4>Links</h4>
             <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="historia.html">Historia</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="historia.html">Historia</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="menu_museo.html">Menu Museo</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="menu_bistro.html">Menu Bistro</a></li>
