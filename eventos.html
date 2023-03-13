@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Tertulianos</title>
-  <meta content="" name="description">
-  <meta content="" name="Restaurante, cocina, autor, launch">
+  <meta content="Restaurante especializado en Fondue y comida Internacional Gourmet" name="description">
+  <meta content="Restaurante, cocina, autor, Gourmet, vino, fondue, steaks, pastas, quetzaltenango, xela, museo" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/ico.png" rel="icon">
@@ -63,9 +63,9 @@
 
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-phone d-flex align-items-center"><span>4532 8923</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Lun-Sab: 7AM - 10PM / Dom: 8AM - 4PM</span></i>
-        <a href="https://www.facebook.com/TertulianosXela" target="blank_"><i class="bx bxl-facebook d-flex align-items-center ms-4"></i></a>
-        <a href="https://www.instagram.com/tertulianos_xela/" target="blank_"><i class="bx bxl-instagram d-flex align-items-center ms-4"></i></a>
+        <!-- <i class="bi bi-clock d-flex align-items-center ms-4"><span> Lun-Sab: 7AM - 10PM / Dom: 8AM - 4PM</span></i> -->
+        <a href="https://www.facebook.com/GrupoCulinarioTertulianos" target="blank_"><i class="bx bxl-facebook d-flex align-items-center ms-4"></i></a>
+        <a href="https://instagram.com/grupoculinariotertulianos" target="blank_"><i class="bx bxl-instagram d-flex align-items-center ms-4"></i></a>
         <a href="https://www.tripadvisor.es/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html" target="blank_"><i class="bx bxl-trip-advisor d-flex align-items-center ms-4"></i></a>
         <a href="https://api.whatsapp.com/send?phone=50245328923" target="blank_"><i class="bx bxl-whatsapp d-flex align-items-center ms-4"></i></a>
       </div>
@@ -91,7 +91,7 @@
                 <li><a href="menu_bistro.html">Menu Bistro</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto active" href="eventos.html">Eventos</a></li>
+            <li><a class="nav-link scrollto active" href="eventos.html">Reservaciones</a></li>
             <li><a class="nav-link scrollto" href="noticias.html">Noticias</a></li>
             <li><a class="nav-link scrollto" href="galeria.html">Galeria</a></li>
             <li><a class="nav-link scrollto" target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html">Trip Advisor</a></li>
@@ -109,10 +109,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Eventos</h2>
+          <h2>Reservaciones</h2>
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li>Eventos</li>
+            <li>Reservaciones</li>
           </ol>
         </div>
 
@@ -124,8 +124,13 @@
         <div class="container" data-aos="fade-up">
   
           <div class="section-title">
-            <h2>Eventos</h2>
-            <p>Organice sus eventos con nosotros </p>
+            <h2>Reservaciones</h2>
+            <p>Organiza tus reservaciones </p>
+            <h6>Bienvenidos al lugar de reservaciones más exclusivas de la ciudad. Aquí en nuestro espacio, combinamos la elegancia y el estilo para crear un ambiente único e inolvidable.</h6>
+            <h6>Nuestro lugar cuenta con un estilo italiano que brinda una experiencia de lujo a nuestros clientes. Disponemos de varios salones con capacidades variables, equipados con tecnología para cualquier tipo de evento: desde conferencias y reuniones de negocios hasta bodas y fiestas privadas.</h6>
+            <h6>Nuestro equipo de expertos en reservaciones está a tu disposición para garantizar que tu celebración sea un éxito.</h6>
+            <h6>Si buscas el lugar perfecto para tu reservación, no busques más. Contáctanos hoy mismo para reservar su fecha y descubre lo que hace de nuestro lugar el mejor lugar de reservaciones de la ciudad.</h6>
+            <h5>¡NOS FUNDIMOS POR SERVIRTE!</h5>
           </div>
   
           <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -516,54 +521,45 @@
         </div>
       </section><!-- End Events Section -->
   
-      <!-- ======= Book A Table Section ======= -->
+      
+  
+          <!-- ======= Book A Table Section ======= -->
       <section id="book-a-table" class="book-a-table">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Reservaciones</h2>
             <p>Reserve una mesa</p>
           </div>
-  
-          <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+
+          <form action="reservacion.php" method="POST">
             <div class="row">
               <div class="col-lg-4 col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               </div>
               <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Please enter a valid email">
-                <div class="validate"></div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Please enter a valid email" required>
               </div>
               <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               </div>
               <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="text" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+                <input type="date" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               </div>
               <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="text" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
+                <input type="time" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               </div>
               <div class="col-lg-4 col-md-6 form-group mt-3">
-                <input type="number" class="form-control" name="people" id="people" placeholder="# de personas" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                <div class="validate"></div>
+                <input type="number" class="form-control" name="people" id="people" placeholder="# de personas" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
               </div>
             </div>
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-              <div class="validate"></div>
             </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-            </div>
+            
             <div class="text-center"><button type="submit">Enviar Reservación</button></div>
           </form>
-  
+
         </div>
       </section><!-- End Book A Table Section -->
 
@@ -575,47 +571,50 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="footer-info">
               <img src="assets/img/Logo-GCT.png" alt="" height="60">
               <p>
                 📍Tertulianos Casa Museo Z.3 <br> 📍Tertulianos Bistro - Bar Z.3 <br><br>
                 <strong>Teléfono:</strong> 4532 8923<br>
-                <strong>Email:</strong> info@grupoculinariogrupoculinariotertulianos.com<br>
+                <strong>Email:</strong> eventostertulianos1@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="https://www.facebook.com/TertulianosXela" target="blank_" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/tertulianos_xela/" target="blank_" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.tripadvisor.es/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html" target="blank_" class="trip-advisor"><i class="bx bxl-trip-advisor"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=50245328923" target="blank_" class="instagram"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.facebook.com/GrupoCulinarioTertulianos" target="blank_" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/grupoculinariotertulianos" target="blank_" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
+                <a href="https://www.tripadvisor.es/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html"
+                  target="blank_" class="trip-advisor"><i class="bx bxl-trip-advisor"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=50245328923" target="blank_" class="instagram"><i
+                    class="bx bxl-whatsapp"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-links">
+          <div class="col-lg-6 col-md-6 footer-links">
             <h4>Links</h4>
             <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="historia.html">Historia</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="historia.html">Historia</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="menu_museo.html">Menu Museo</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="menu_bistro.html">Menu Bistro</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="eventos.html">Eventos</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="noticias.html">Noticias</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="galeria.html">Galeria</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html">Trip Advisor</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="contacto.html">Contacto</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="historia.html">Historia</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu_museo.html">Menu Museo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="menu_bistro.html">Menu Bistro</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="eventos.html">Reservaciones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="noticias.html">Noticias</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="galeria.html">Galeria</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g292013-d2411330-Reviews-Tertulianos_Restaurante_Museo-Quetzaltenango_Quetzaltenango_Department_Western_Hi.html">Trip Advisor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Suscribirse</h4>
             <p>Suscribete para recibir promociones y noticias:</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribirse">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -627,7 +626,7 @@
       </div>
       <div class="credits">
 
-        Diseñado por <a href="https://szystems.com/">Szystems</a> & <a href="#/">Rivera Designs</a>
+        Diseñado por <a href="https://szystems.com/">Szystems</a> & <a href="https://www.facebook.com/R.Publicidad8">R-Publicidad</a>
       </div>
     </div>
   </footer><!-- End Footer -->

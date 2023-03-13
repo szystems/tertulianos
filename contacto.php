@@ -3,7 +3,7 @@
     $field_email = $_POST['email'];
     $field_message = $_POST['message'];
 
-    $mail_to = 'szotto18@hotmail.com';
+    $mail_to = 'eventostertulianos1@gmail.com';
 
     $subject = 'Mensaje desde www.grupoculinariotertulianos.com (Contacto) ' . $field_name;
 
