@@ -19,7 +19,7 @@
     if ($mail_status) { ?>
         <script language="javascript" type="text/javascript">
             // Print a message
-            alert('Gracias por comunicarte, pronto un agente se comunicara contigo.');
+            alert('¡Gracias! un asesor se pondrá en contacto contigo a la brevedad posible.');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
             window.location = 'contacto.html';
         </script>
